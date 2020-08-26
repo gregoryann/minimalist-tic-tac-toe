@@ -1,2 +1,1 @@
-# minimalist-tic-tac-toe
-minimalist-tic-tac-toe
+# Minimalist Tic Tac Toe
