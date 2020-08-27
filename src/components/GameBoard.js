@@ -37,13 +37,24 @@ const GameBoard = () => {
     }
 
 
+    function playAgain() {
+        setCells([
+            [],
+            [],
+            []
+        ]);
+    }
+
+
+
+
     return ( <
         >
         <
         section className = "page-header" >
         <
-        h5 className = "page-title" > Tic Tac Toe < /h5> <
-        /section> <
+        h5 className = "page-title" > Tic Tac Toe < /h5> < /
+        section > <
         section >
         <
         h1 className = "status" > { status } < /h1> <
@@ -52,9 +63,21 @@ const GameBoard = () => {
         div className = "board-row" > { renderCells(3) } { renderCells(4) } { renderCells(5) } <
         /div> <
         div className = "board-row" > { renderCells(6) } { renderCells(7) } { renderCells(8) } <
-        /div> <
-        /section> <
+        /div> < /
+        section > <
         />
+
+
+        <
+        section className = "reset-btn" >
+        <
+        li >
+        <
+        button onClick = { playAgain } > Play Again < /button> <
+        /li> <
+        /section>
+
+
     )
 }
 export default GameBoard
