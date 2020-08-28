@@ -1,4 +1,4 @@
-    :root {
+:root {
     font: 16px / 1 sans-serif;
 }
 
@@ -13,22 +13,47 @@ body {
     min-height: 100%;
     background-color: #2c3e50;
     color: #fff;
-    .page-header {
-        text-align: center;
-        font-size: 2em;
-    }
-    .square {
-        color: #424242;
-        background: #26a69a;
-        border: 4px solid #00897b;
-        float: left;
-        font-size: 96px;
-        font-weight: bold;
-        line-height: 136px;
-        height: 136px;
-        margin-right: -1px;
-        margin-top: -1px;
-        padding: 0;
-        text-align: center;
-        width: 136px;
-    }
+}
+
+.page-header {
+    text-align: center;
+    font-size: 2em;
+}
+
+.cell {
+    color: #424242;
+    background: #26a69a;
+    border: 4px solid #00897b;
+    float: left;
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 136px;
+    height: 136px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 136px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 156px;
+}
+
+//makes 3 by 3 table
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.play-again-btn {
+    padding-top: 1em;
+    list-style: none;
+}
